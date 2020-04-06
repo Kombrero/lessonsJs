@@ -9,7 +9,7 @@ let min = 0,
         function nestedFunc() {
             // получить случайное число от (min-0.5) до (max+0.5)
             let rand = min - 0.5 + Math.random() * (max - min + 1);
-            rand = Math.round(rand)
+            rand = Math.floor(rand)
             console.log(rand);
             
             userInteger = prompt('Угадай число от 0 до 100');
